@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int i,a,b,c,ans=0;
+    printf ("Enter three numbers: ");
+    scanf ("%d %d %d",&a,&b,&c);
+    i=b;
+    while (1)
+    {
+        if (i%a==0 && i%b==0 && i%c==0)
+        {
+            ans=i;
+            break;
+        }
+        i++;
+    }
+    printf ("The LCM of %d, %d and %d is: %d",a,b,c,ans);
+    return 0;
+}
